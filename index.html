@@ -3,13 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>SuperHeros</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
 </head>
 <body>
-  <header>SuperHeros</header>
+  <header>    
+    <h1>Encuentra tu SuperHero</h1>
+
+    <form id="form">
+      <label for="search-input">Ingresa el numero del SuperHero</label>
+      <input type="text" id="search-input" placeholder="Ingresa un numero">
+      <button id="btn-search">Buscar</button>
+    </form>
+  </header>
   <main>
+    <div id="result">
+
+    </div>
+    <div id="graph">
+      
+    </div>
     
   </main>
   <footer></footer>
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <!-- canvasjs jquery -->
+  <script src="https://cdn.canvasjs.com/ga/jquery.canvasjs.min.js"></script>
+
+  <script src="./assets/js/app.js"></script>
 </body>
 </html>
