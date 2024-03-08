@@ -4,8 +4,15 @@
   box-sizing: border-box;
 }
 
+header {
+  display: grid;
+  justify-content: center;
+}
+
 main {
   display: flex;
+  justify-content: center;
+  margin-top: 1rem;
 }
 
 #form {
@@ -17,14 +24,39 @@ main {
 }
 
 #graph {
-  width: 250px;
+  width: 300px;
   height: 200px;
+  margin-block: auto;
+}
+
+#result {
+  .card {
+    width: 13rem;
+
+    .card-title {
+      margin: 0;
+    }
+
+    .card-body {
+      padding: 0.5rem;
+    }
+
+    .list-group-item {
+      padding: 0.5rem;
+    }
+
+    img {
+      height: 13rem;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
 }
 
 button {
   min-width: 200px;
   margin-inline: auto;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 input {

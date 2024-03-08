@@ -11,10 +11,10 @@ $(document).ready(function(){
       success: function(superhero){
         console.log(superhero);
         $('#result').html(`
-          <div class="card" style="width: 18rem;">
+          <div class="card">
           <img src="${superhero.image.url}" class="card-img-top" alt="${superhero.name}">
           <div class="card-body">
-            <h5 class="card-title">${superhero.name} <span class="badge text-bg-secondary">${superhero.id}</span></h5>
+            <h6 class="card-title">${superhero.name}</h6>
           </div>
           <ul class="list-group list-group-flush">
             <li class="list-group-item">${superhero.appearance.race}</li>
@@ -33,7 +33,6 @@ $(document).ready(function(){
           data: [{
             type: "doughnut",
             startAngle: 60,
-            //innerRadius: 60,
             indexLabelFontSize: 10,
             indexLabel: "{label}",
             toolTipContent: "<b>{label}:</b> {y}",
