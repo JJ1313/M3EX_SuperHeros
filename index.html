@@ -9,7 +9,8 @@
   <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
 </head>
 <body>
-  <header>    
+  <header>  
+    
     <h1>Encuentra tu SuperHero</h1>
 
     <form id="form">
@@ -18,16 +19,17 @@
       <button id="btn-search">Buscar</button>
     </form>
   </header>
-  <main>
-    <div id="result">
 
+  <main class="container">
+    <div class="row text-center">
+      <p id="error-section" class="alert alert-danger" role="alert"></p>
     </div>
-    <div id="graph">
-      
+    <div class="row">
+      <section id="result" class="col-12"></section>
+      <section id="graph" class="col-12"></section>
     </div>
-    
   </main>
-  <footer></footer>
+  <!-- <footer></footer> -->
   <!-- bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <!-- jquery -->
